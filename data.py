@@ -1,6 +1,14 @@
-urban_routes_url = 'https://029f5e89-1ed2-457a-8c61-c3ff8b9e57c2.serverhub.tripleten-services.com'
-address_from = 'East 2nd Street, 601'
-address_to = '1300 1st St'
-phone_number = '+1 123 123 12 12'
-card_number, card_code = '1234 5678 9100', '111'
-message_for_driver = 'Muéstrame el camino al museo'
+#URL inicial de la pagina web Urban Routes
+URBAN_ROUTES_URL = 'https://cnt-65c5a187-a108-41c1-a778-877b283f544c.containerhub.tripleten-services.com/?lng=es'
+#Direccion para la  casilla Desde
+ADDRESS_FROM = 'East 2nd Street, 601'
+#Direccion para la casilla Hasta
+ADDRESS_TO = '1300 1st St'
+#Numero telefonico del Usuario
+PHONE_NUMBER = '+1 123 123 12 12'
+#Numero de la tarjeta de credito del Usuario
+CARD_NUMBER = '1234 5678 9100'
+#Numero del codigo tarjeta del Usuario.
+CARD_CODE = '111'
+#Mensaje para el conductor.
+MESSAGE_DRIVER = 'Drive me to Central Park'
