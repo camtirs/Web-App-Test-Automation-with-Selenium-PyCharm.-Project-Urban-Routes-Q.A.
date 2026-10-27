@@ -1,6 +1,6 @@
-# Pruebas de automatización web de Urban Routes
+# Sprint 9: Pruebas de automatización web de Urban Routes
 
-**  Sprint 9:Proyecto**
+**Proyecto QA Engineer — TripleTen**
 
 ## Descripción
 
@@ -104,4 +104,4 @@ El resultado real debe confirmarse ejecutando la suite contra el servidor activo
 
 Camilo Tiuzo
 
-QA Engineer 88| TripleTen
+QA Engineer en formación | TripleTen
