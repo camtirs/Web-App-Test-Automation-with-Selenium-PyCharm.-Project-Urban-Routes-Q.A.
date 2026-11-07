@@ -1,107 +1,109 @@
-# Sprint 9: Pruebas de automatización web de Urban Routes
+# Sprint 9: Web Automation Testing for Urban Routes
 
-**Proyecto QA Engineer — TripleTen**
+**QA Engineer Project — TripleTen**
 
-## Descripción
+## Description
 
-Este proyecto implementa pruebas automatizadas de interfaz de usuario para Urban Routes mediante Python, Selenium WebDriver y pytest.
+This project implements automated user interface tests for Urban Routes using Python, Selenium WebDriver, and pytest.
 
-El objetivo es verificar las principales funcionalidades del proceso de reservación de taxis, desde la configuración de la ruta hasta la visualización de la información del conductor.
+The goal is to verify the main functionalities of the taxi booking process, from route configuration to the display of driver information.
 
-Las pruebas están organizadas en escenarios independientes y utilizan el patrón Page Object Model (POM) para separar las interacciones con la interfaz de los casos de prueba.
+The tests are organized into independent scenarios and use the Page Object Model (POM) pattern to separate interactions with the interface from the test cases.
 
-## Objetivos
+## Objectives
 
-- Automatizar escenarios funcionales de la reservación de taxis.
-- Verificar los datos introducidos por el usuario.
-- Validar la selección de tarifa, el teléfono, el método de pago y las opciones del viaje.
-- Comprobar el modal de búsqueda del automóvil y la información del conductor.
-- Mejorar la mantenibilidad y la confiabilidad de las pruebas automatizadas.
+- Automate functional scenarios for taxi booking.
+- Verify the data entered by the user.
+- Validate the fare selection, phone number, payment method, and trip options.
+- Test the car search modal and driver information.
+- Improve the maintainability and reliability of the automated tests.
 
-## Tecnologías
 
-- **Python:** lenguaje de programación.
-- **Selenium WebDriver:** automatización de las interacciones con el navegador.
-- **pytest:** ejecución y organización de las pruebas.
-- **Chrome:** navegador utilizado para ejecutar los escenarios.
+## Technologies
 
-## Estructura de archivos
+- **Python:** programming language.
+- **Selenium WebDriver:** automation of browser interactions.
+- **pytest:** test execution and organization.
+- **Chrome:** browser used to run the test scenarios.
 
-- `main.py`: contiene los nueve escenarios de prueba y la configuración del navegador.
-- `pages.py`: contiene la clase `UrbanRoutesPage`, los localizadores y los métodos de interacción.
-- `data.py`: centraliza la URL y los datos de prueba.
-- `helpers.py`: contiene la función proporcionada por TripleTen para recuperar el código de confirmación telefónica.
-- `README.md`: documentación del proyecto.
-- `.gitignore`: excluye archivos temporales y configuraciones locales.
+## File Structure
 
-## Escenarios de prueba
+- `main.py`: contains the nine test scenarios and browser configuration.
+- `pages.py`: contains the `UrbanRoutesPage` class, locators, and interaction methods.
+- `data.py`: centralizes the URL and test data.
+- `helpers.py`: contains the function provided by TripleTen to retrieve the phone verification code.
+- `README.md`: project documentation.
+- `.gitignore`: excludes temporary files and local settings.
 
-1. Configuración de las direcciones de origen y destino.
-2. Selección y validación de la tarifa Comfort.
-3. Registro y confirmación del número telefónico.
-4. Agregado del método de pago.
-5. Introducción y validación del mensaje para el conductor.
-6. Selección de manta y pañuelos.
-7. Selección de dos helados.
-8. Visualización del modal de búsqueda del automóvil.
-9. Verificación de la información del conductor.
+## Test Scenarios
 
-## Estrategias de automatización
+1. Configuring the origin and destination addresses.
+2. Selecting and validating the Comfort fare.
+3. Registering and confirming the phone number.
+4. Adding a payment method.
+5. Entering and validating the message for the driver.
+6. Selecting a blanket and tissues.
+7. Selecting two ice creams.
+8. Displaying the car search modal.
+9. Verifying the driver’s information.
 
-- Localizadores mediante ID, XPath, CSS Selector y Class Name.
-- Esperas explícitas para elementos dinámicos.
-- Validaciones mediante aserciones.
-- Preparación independiente de los escenarios.
-- Cierre del navegador después de cada prueba.
+## Automation Strategies
 
-## Instalación
+- Element locators using ID, XPath, CSS selector, and class name.
+- Explicit waits for dynamic elements.
+- Validations using assertions.
+- Independent setup of test scenarios.
+- Closing the browser after each test.
 
-Se recomienda utilizar un entorno virtual de Python.
+## Installation
+
+It is recommended to use a Python virtual environment.
 
 ```bash
 python -m venv venv
 ```
 
-Activar el entorno en Windows:
+Activate the environment on Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-Instalar las dependencias:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Configuración
+## Configuration
 
-Antes de ejecutar las pruebas, actualiza `urban_routes_url` en `data.py` con la URL activa proporcionada por TripleTen.
+Before running the tests, update `urban_routes_url` in `data.py` with the active URL provided by TripleTen.
 
-Verifica también que Chrome, Selenium y el controlador del navegador sean compatibles con el entorno de ejecución.
+Also verify that Chrome, Selenium, and the browser driver are compatible with the runtime environment.
 
-## Ejecución de las pruebas
+## Running the Tests
 
-Ejecutar todos los escenarios:
+Run all scenarios:
 
 ```bash
 pytest main.py -v
 ```
 
-Ejecutar un escenario específico:
+Run a specific scenario:
 
 ```bash
 pytest main.py::TestUrbanRoutes::test_set_route -v
 ```
 
-## Resultado esperado
+## Expected Result
 
-pytest muestra el resultado individual de cada escenario, permitiendo identificar las pruebas aprobadas y las que necesitan revisión.
+pytest displays the individual results for each scenario, allowing you to identify which tests passed and which need review.
 
-El resultado real debe confirmarse ejecutando la suite contra el servidor activo de Urban Routes.
+The actual result must be confirmed by running the suite against the live Urban Routes server.
 
-## Autor
+## Author
 
 Camilo Tiuzo
+Quality Assurance Engineer
 
-QA Engineer en formación | TripleTen
+
