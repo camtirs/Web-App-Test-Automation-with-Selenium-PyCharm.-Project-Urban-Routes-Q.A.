@@ -1,6 +1,5 @@
 # Web Automation With Selenium & PyCharm Testing for Urban Routes
 
-**QA Engineer Project — TripleTen**
 
 ## Description
 
